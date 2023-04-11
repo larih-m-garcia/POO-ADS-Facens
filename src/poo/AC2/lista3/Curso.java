@@ -1,7 +1,6 @@
-package poo.exercicios.AC2.lista3;
+package poo.AC2.lista3;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class Curso {
     private int codigo;

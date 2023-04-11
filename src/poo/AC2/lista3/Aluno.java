@@ -1,4 +1,4 @@
-package poo.exercicios.AC2.lista3;
+package poo.AC2.lista3;
 
 public class Aluno {
     private String ra;

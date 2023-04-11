@@ -1,6 +1,4 @@
-package poo.exercicios.AC2.lista3;
-
-import poo.exercicios.AC1.lista2.exercicio2.Apolice;
+package poo.AC2.lista3;
 
 import java.util.ArrayList;
 import java.util.Scanner;

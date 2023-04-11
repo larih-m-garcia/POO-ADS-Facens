@@ -1,4 +1,4 @@
-package poo.exercicios.AC1.lista1.exercicio1;
+package poo.AC1.lista1.exercicio1;
 
 public class Pessoa {
 

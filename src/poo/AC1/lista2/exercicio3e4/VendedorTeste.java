@@ -1,4 +1,4 @@
-package poo.exercicios.AC1.lista2.exercicio3e4;
+package poo.AC1.lista2.exercicio3e4;
 
 import java.util.Scanner;
 
