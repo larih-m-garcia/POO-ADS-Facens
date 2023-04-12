@@ -7,15 +7,6 @@ public class Menu {
 
     public static void main(String[] args) {
 
-        //int codigoDisc;
-        //String nomeDisc;
-        //String nome;
-        //String cpf;
-        //String url;
-        //String setor;
-        //String funcao;
-        //String ra;
-        //String curso;
         Scanner input = new Scanner(System.in);
         ArrayList<Pessoa> pessoas = new ArrayList();
         int opcao = 0;
