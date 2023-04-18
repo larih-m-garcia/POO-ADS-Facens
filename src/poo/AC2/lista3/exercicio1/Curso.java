@@ -1,4 +1,6 @@
-package poo.AC2.lista3;
+package poo.AC2.lista3.exercicio1;
+
+import poo.AC2.lista3.exercicio1.Aluno;
 
 import java.util.ArrayList;
 

@@ -1,7 +1,5 @@
 package poo.ExercicioAula;
 
-import poo.AC2.lista3.Aluno;
-
 import java.util.ArrayList;
 
 public class Professor extends Funcionario {
