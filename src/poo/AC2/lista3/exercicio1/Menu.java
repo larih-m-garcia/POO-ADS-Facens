@@ -1,8 +1,5 @@
 package poo.AC2.lista3.exercicio1;
 
-import poo.AC2.lista3.exercicio1.Aluno;
-import poo.AC2.lista3.exercicio1.Curso;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -12,10 +9,6 @@ public class Menu {
 
         Scanner input = new Scanner(System.in);
         int codigo;
-        String nomeCurso;
-        int cargaHoraria;
-        String ra;
-        String nomeAluno;
         ArrayList<Curso> cursos = new ArrayList<>();
         int opcao = 0;
 
@@ -33,6 +26,8 @@ public class Menu {
 
             switch (opcao){
                 case 1:
+                    String nomeCurso;
+                    int cargaHoraria;
                     System.out.println("Digite o Código do Curso: ");
                     codigo = (input.nextInt());
                     System.out.println("Digite o Nome do Curso: ");
@@ -44,6 +39,8 @@ public class Menu {
                     cursos.add(curso);
                     break;
                 case 2:
+                    String ra;
+                    String nomeAluno;
                     System.out.println("Digite o RA do Aluno: ");
                     ra = (input.next());
                     System.out.println("Digite o Nome do Aluno: ");
@@ -62,16 +59,32 @@ public class Menu {
                     }
                     break;
                 case 3:
-                    System.out.println("Qual aluno deseja remover?");
+                    int index = 1;
+                    int indexDelete;
+                    System.out.println("Qual aluno deseja remover? (Digite o código)");
                     for (int i = 0; i < cursos.size(); i++) {
-                        int num = i + 1;
                         for (Aluno a : cursos.get(i).getAlunos()) {
-                            System.out.println(num + a.getNome());
+                            System.out.println(index + " - " + a.getNome());
+                            index ++;
                         }
                     }
+                    indexDelete = (input.nextInt());
+                    index = 1;
+                    for (int i = 0; i < cursos.size(); i++) {
+                        for (int j = 0; j < cursos.get(i).getAlunos().size(); j++) {
+                            if (index == indexDelete){
+                                cursos.get(i).removerAluno(j);
+                                index ++;
+                                break;
+                            }
+                            index ++;
+                        }
+                    }
+
+                    break;
                 case 4:
                     for (Curso c : cursos) {
-                        System.out.println(c.imprimir());;
+                        System.out.println(c.imprimir());
                     }
                     break;
                 case 5:
